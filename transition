@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .class{
+            display: flex;
+            justify-content: space-evenly;
+        }
+#box1{
+    border: 2px solid red;
+    background-color: plum;
+    height: 200px;
+    width: 200px;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+#box1:hover{
+    background-color: rgb(247, 128, 128);
+    border-radius: 30px;
+    height: 400px;
+    width: 400px;
+    transform-style: flat;
+    transform: translate3d(10px 10px 10px);
+}
+#box2{
+    border: 2px solid blue;
+    background-color: rgb(90, 90, 247);
+    height: 200px;
+    width: 200px;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+#box2:hover{
+    background-color: rgb(140, 185, 252);
+    border-radius: 30px;
+    height: 400px;
+    width: 400px;
+}
+#box3{
+    border: 2px solid purple;
+    background-color: rgb(250, 82, 250);
+    height: 200px;
+    width: 200px;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+#box3:hover{
+    background-color: rgb(205, 137, 244);
+    border-radius: 30px;
+    height: 400px;
+    width: 400px;
+}
+    </style>
+</head>
+<body>
+    <div class="class">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+</div>
+</body>
+</html>
